@@ -11,8 +11,10 @@ font = "Open Sans:style=Bold";
 icons = [
     ["all"],
     ["export-stl"],
+    ["export-obj"],
     ["export-off"],
     ["export-amf"],
+    ["export-x3d"],
     ["export-dxf"],
     ["export-svg"],
     ["export-csg"],
@@ -251,22 +253,24 @@ module icon_translate(idx, icon, cols) {
 module icon(icon) {
     cols = 4;
     icon_translate(0, icon, cols) export("STL");
-    icon_translate(1, icon, cols) export("OFF");
-    icon_translate(2, icon, cols) export("AMF");
-    icon_translate(3, icon, cols) export("DXF");
-    icon_translate(4, icon, cols) export("SVG");
-    icon_translate(5, icon, cols) export("CSG");
-    icon_translate(6, icon, cols) preview();
-    icon_translate(7, icon, cols) render_();
-    icon_translate(8, icon, cols) zoom_in();
-    icon_translate(9, icon, cols) zoom_out();
-    icon_translate(10, icon, cols) undo();
-    icon_translate(11, icon, cols) redo();
-    icon_translate(12, icon, cols) indent();
-    icon_translate(13, icon, cols) unindent();
-    icon_translate(14, icon, cols) new();
-    icon_translate(15, icon, cols) save();
-    icon_translate(16, icon, cols) open();
+    icon_translate(1, icon, cols) export("OBJ");
+    icon_translate(2, icon, cols) export("OFF");
+    icon_translate(3, icon, cols) export("AMF");
+    icon_translate(4, icon, cols) export("X3D");
+    icon_translate(5, icon, cols) export("DXF");
+    icon_translate(6, icon, cols) export("SVG");
+    icon_translate(7, icon, cols) export("CSG");
+    icon_translate(8, icon, cols) preview();
+    icon_translate(9, icon, cols) render_();
+    icon_translate(10, icon, cols) zoom_in();
+    icon_translate(11, icon, cols) zoom_out();
+    icon_translate(12, icon, cols) undo();
+    icon_translate(13, icon, cols) redo();
+    icon_translate(14, icon, cols) indent();
+    icon_translate(15, icon, cols) unindent();
+    icon_translate(16, icon, cols) new();
+    icon_translate(17, icon, cols) save();
+    icon_translate(18, icon, cols) open();
 }
 
 icon = "all";
